@@ -15,7 +15,6 @@ public class Main {
         User sabina = new User("Sabina", "Female");
         telegram.addUser(grisha);
         telegram.addUser(sabina);
-
         Post post1 = new Post(grisha.getId(), "B", "Where is the scholarship money?");
         Post post2 = new Post(sabina.getId(), "A", "Go to work if you want money!");
         telegram.addPost(post1);
