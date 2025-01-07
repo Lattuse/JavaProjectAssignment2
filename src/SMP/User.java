@@ -1,15 +1,13 @@
 package SMP;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.Collectors;
-import java.util.Objects;
+
 
 public class User extends Entity {
+    private static int userGenId = 0;
     private String name;
     private String gender;
 
     public User(String name, String gender) {
-        super();
+        super(userGenId++);
         this.name = name;
         this.gender = gender;
     }

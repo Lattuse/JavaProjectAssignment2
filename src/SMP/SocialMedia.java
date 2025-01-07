@@ -2,7 +2,6 @@ package SMP;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.Objects;
 
 public class SocialMedia {
     private String platformName;

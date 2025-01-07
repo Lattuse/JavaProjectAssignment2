@@ -1,16 +1,14 @@
 package SMP;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.Collectors;
-import java.util.Objects;
+
 
 public class Post extends Entity {
+    private static int postGenId = 0;
     private String title;
     private final int authorId;
     private String content;
 
     public Post(int authorId, String title, String content) {
-        super();
+        super(postGenId++);
         this.authorId = authorId;
         this.title = title;
         this.content = content;
@@ -41,3 +39,4 @@ public class Post extends Entity {
         return "Post {postID=" + id + ", title='" + title + "', authorId=" + authorId + ", content='" + content + "'}";
     }
 }
+

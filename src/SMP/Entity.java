@@ -1,16 +1,12 @@
 package SMP;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.Collectors;
 import java.util.Objects;
 
 
 abstract class Entity {
-    private static int genId = 0;
     protected final int id;
 
-    public Entity() {
-        this.id = genId++;
+    public Entity(int id) {
+        this.id = id;
     }
 
     public int getId() {
