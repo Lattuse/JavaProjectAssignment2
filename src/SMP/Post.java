@@ -1,0 +1,43 @@
+package SMP;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.Objects;
+
+public class Post extends Entity {
+    private String title;
+    private final int authorId;
+    private String content;
+
+    public Post(int authorId, String title, String content) {
+        super();
+        this.authorId = authorId;
+        this.title = title;
+        this.content = content;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public int getAuthorId() {
+        return authorId;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    @Override
+    public String toString() {
+        return "Post {postID=" + id + ", title='" + title + "', authorId=" + authorId + ", content='" + content + "'}";
+    }
+}
